@@ -350,7 +350,7 @@
 | NC217A  |            | Okay       | Error       | ??      | ??        |
 | NC218A  |            | Okay       | Error       | ??      | ??        |
 | NC219A  |            | Okay       | Error       | ??      | ??        |
-| NC220M  |            | Okay       | Okay        | Okay    | Abend     |
+| NC220M  |            | Okay       | Okay        | Okay    | Okay      |
 | NC221A  |            | Okay       | Error       | ??      | ??        |
 | NC222A  |            | Okay       | Error       | ??      | ??        |
 | NC223A  |            | Okay       | Error       | ??      | ??        |
