@@ -833,9 +833,10 @@ set pgm=%3
 if /I %4. EQU NOCOUNT. set /A nocount = %nocount% + 1
 if /I %4. NEQ NOCOUNT. set /A tested  = %tested%  + 1
 if not exist %dir%\%pgm%.CBL goto :sub_nocbl
+rem -- set copy source location
+set XXXXX047=%~dps0
+set XXXXX048=%~dps0
 rem -- set printer destination if GO step is requested
-set XXXXX047=%dir%
-set XXXXX048=%dir%
 if %1 == CBLCLG (set XXXXX055=%dir%\%pgm%_XXXXX055.OUT
          ) else (set XXXXX055=)
 call bat\%1 %z_TraceMode% %dir%\%pgm% notiming SYSCPY(+%~dps0) %z390opt%

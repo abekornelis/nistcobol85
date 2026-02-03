@@ -8073,9 +8073,13 @@ SM206A    ZC390 ZC390E split pseudo COPY replacement not supported063800       
 SM206A    ZC390 ZC390E unknown COPY parm - PERFORM064000             PERFORM PASS                                          on line 659
 SM206A    ZC390 ENDED   RC=12 MEM(MB)= MB IO=***
 SM207A    ZC390 START
-SM207A    ZC390 ZC390E I/O error opening copy file - java.io.FileNotFoundException: C:\z390dev\wrk_nist\src\ALTLB.CPZ (The system cannot find the file specified)032100     XXXXX047.                                                     on line 321
-SM207A    ZC390 ZC390E I/O error opening copy file - java.io.FileNotFoundException: C:\z390dev\wrk_nist\src\ALTLB.CPZ (The system cannot find the file specified)034000     XXXXX048.                                                     on line 340
-SM207A    ZC390 ENDED   RC=12 MEM(MB)= MB IO=***
+SM207A    ZC390 ENDED   RC= 0 MEM(MB)= MB IO=***
+SM207A    MZ390 START
+SM207A    MZ390 ENDED   RC= 0 MEM(MB)= MB IO=***
+SM207A    LZ390 START
+SM207A    LZ390 ENDED   RC= 0 MEM(MB)= MB IO=***
+SM207A    EZ390 START
+SM207A    EZ390 ENDED   RC= 0 MEM(MB)= MB IO=*** INS=2479
 SM208A    ZC390 START
 SM208A    ZC390 ENDED   RC= 0 MEM(MB)= MB IO=***
 SM208A    MZ390 START
@@ -10486,14 +10490,14 @@ ST301M    AZ390 AZ390I FID= 60 ERR=   1 C:\z390dev\wrk_rt\zcobol\mac\MERGE.MAC
 ST301M    AZ390 AZ390I FID= 61 ERR=   1 C:\z390dev\wrk_rt\zcobol\mac\RELEASE.MAC
 ST301M    AZ390 AZ390I FID= 66 ERR=   1 C:\z390dev\wrk_rt\zcobol\mac\SORT.MAC
 ST301M    MZ390 ENDED   RC= 8 MEM(MB)= MB IO=***
-..\wrk_nist\z390\RUNNIST.BAT 51 copy members found and 0 not found
-..\wrk_nist\z390\RUNNIST.BAT 2 data members found and 0 not found
-..\wrk_nist\z390\RUNNIST.BAT 459 compiles completed:         
-..\wrk_nist\z390\RUNNIST.BAT - okay RC=0 for 41 tests     
-..\wrk_nist\z390\RUNNIST.BAT - warn RC=4 for 0 tests     
-..\wrk_nist\z390\RUNNIST.BAT - err  RC=8 for 372 tests      
-..\wrk_nist\z390\RUNNIST.BAT - any other for 46 tests     
-..\wrk_nist\z390\RUNNIST.BAT - and 26 not NIST             
-..\wrk_nist\z390\RUNNIST.BAT z390 repository is at hash 881a1f79195060dfa01dda43713dd7e4c42c7ea7 
-..\wrk_nist\z390\RUNNIST.BAT NIST repository is at hash 93db384c748615192bbf55d0265c2b76e9b57771 
-..\wrk_nist\z390\RUNNIST.BAT Date: 29/01/2026 17:49:01,46                  
+z390\RUNNIST.BAT 51 copy members found and 0 not found
+z390\RUNNIST.BAT 2 data members found and 0 not found
+z390\RUNNIST.BAT 459 compiles completed:         
+z390\RUNNIST.BAT - okay RC=0 for 42 tests     
+z390\RUNNIST.BAT - warn RC=4 for 0 tests     
+z390\RUNNIST.BAT - err  RC=8 for 372 tests      
+z390\RUNNIST.BAT - any other for 45 tests     
+z390\RUNNIST.BAT - and 26 not NIST             
+z390\RUNNIST.BAT z390 repository is at hash dad2f35e63a507db1be6be2762fb48baf8be0e6f 
+z390\RUNNIST.BAT NIST repository is at hash 609e92cb0684e00e056c04b3379e4304ca920d5c 
+z390\RUNNIST.BAT Date: 02/02/2026 21:55:12,75                  
