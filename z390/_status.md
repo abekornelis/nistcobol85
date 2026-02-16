@@ -486,7 +486,7 @@
 | SM207A  |            | Okay       | Okay        | Okay    | Okay      |
 | SM208A  |            | Okay       | Severe      | ??      | ??        |
 | SM301M  |            | Okay       | Okay        | Okay    | Okay      |
-| SM401M  |            | Okay       | Error       | ??      | ??        |
+| SM401M  |            | Okay       | Okay        | Okay    | Okay      |
 
 ## Module SQ = Sequential I/O
 
