@@ -387,8 +387,8 @@
 
 | Program | Subprogram | Conversion | Compilation | Linkage | Execution |
 |---------|------------|------------|-------------|---------|-----------|
-| OBIC1A  |            | Okay       | Okay        | Error   | ??        |
-|         | OBIC2A     | Okay       | Error       | --      | --        |
+| OBIC1A  |            | Okay       | Okay        | Okay    | Abend     |
+|         | OBIC2A     | Okay       | Okay        | --      | --        |
 |         | OBIC3A     | Okay       | Okay        | --      | --        |
 | OBNC1M  |            | Okay       | Severe      | ??      | ??        |
 | OBNC2M  |            | Okay       | Severe      | ??      | ??        |
@@ -595,7 +595,7 @@
 |         | ST105A     | Okay       | Error       | --      | --        |
 | ST106A  |            | Okay       | Error       | ??      | ??        |
 |         | ST107A     | Okay       | Error       | --      | --        |
-| ST108A  |            | Okay       | Error       | ??      | ??        |
+| ST108A  |            | Okay       | Okay        | Okay    | Okay      |
 | ST109A  |            | Okay       | Error       | ??      | ??        |
 |         | ST110A     | Okay       | Error       | --      | --        |
 |         | ST111A     | Okay       | Error       | --      | --        |
@@ -605,7 +605,7 @@
 | ST115A  |            | Okay       | Error       | ??      | ??        |
 |         | ST116A     | Okay       | Error       | --      | --        |
 |         | ST117A     | Okay       | Error       | --      | --        |
-| ST118A  |            | Okay       | Error       | ??      | ??        |
+| ST118A  |            | Okay       | Okay        | Okay    | Okay      |
 | ST119A  |            | Okay       | Error       | ??      | ??        |
 |         | ST120A     | Okay       | Error       | --      | --        |
 |         | ST121A     | Okay       | Error       | --      | --        |
@@ -621,7 +621,7 @@
 | ST134A  |            | Okay       | Error       | ??      | ??        |
 | ST135A  |            | Okay       | Error       | ??      | ??        |
 | ST136A  |            | Okay       | Error       | ??      | ??        |
-| ST137A  |            | Okay       | Error       | ??      | ??        |
+| ST137A  |            | Okay       | Severe      | ??      | ??        |
 | ST139A  |            | Okay       | Error       | ??      | ??        |
 | ST140A  |            | Okay       | Error       | ??      | ??        |
 | ST144A  |            | Okay       | Error       | ??      | ??        |
