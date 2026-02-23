@@ -835,7 +835,7 @@ if /I %4. NEQ NOCOUNT. set /A tested  = %tested%  + 1
 if not exist %dir%\%pgm%.CBL goto :sub_nocbl
 rem -- set copy source location
 set XXXXX047=%~dps0
-set XXXXX048=%~dps0
+set XXXXX048=%~dps0\..\z390alt\
 rem -- set printer destination if GO step is requested
 if %1 == CBLCLG (set XXXXX055=%dir%\%pgm%_XXXXX055.OUT
          ) else (set XXXXX055=)
