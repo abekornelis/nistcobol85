@@ -69,7 +69,7 @@ goto parmloop
 :parmdone
 rem -- check for prior errors and validate path to z390
 rem -- extract current hash ID from NIST and z390 repositories
-set nistdir=%CD%
+for %%I in (".") do set "nistdir=%%~fI"
 for /f "delims=" %%i in ('git rev-parse HEAD') do set NIST_LVL=%%i || goto no_nistrepo
 
 if %parmrc%   EQU 8  goto return
@@ -751,6 +751,8 @@ if %myRC% GTR %NIST_RC% set NIST_RC=%myRC%
 sort /+17 %nistdir%\z390\#all.err /O %nistdir%\z390\#allsort.err
 set myRC=%ERRORLEVEL%
 if %myRC% GTR %NIST_RC% set NIST_RC=%myRC%
+rem -- edit #full_log.txt for better comparability between versions
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0RunNistEdit.PS1" -Nistdir "%nistdir%" -z390dir "%z390dir%" -LogFile "z390\#full_log.txt"
 echo .
 echo final return code is %NIST_RC%
 goto return
