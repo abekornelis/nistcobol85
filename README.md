@@ -175,15 +175,15 @@ The script assigns file extensions based on the file type provided in the header
 
 ## zCobol use of the NIST test Suite
 
-For z390 a separate subdirectoey has been created: z390
+For z390 a separate subdirectory has been created: z390
 
 This directory contains z390-specific variations of NIST test programs and
 copies of copy members - z390 requires extension .CPZ rather than .CPY
 
-It also contains the RUNNIST.BAT script.
-Start the RUNNIST.BAT without parameters to get an explanation of its parameters.
+It also contains the RUNNIST.BAT and runnist.sh scripts.
+Start the RUNNIST.BAT or runnist.sh script without parameters to get an explanation of its parameters.
 
-The RUNNIST.BAT procedure will compile, link, and execute all programs in the NIST suite
+Either script will compile, link, and execute all programs in the NIST suite
 and also the additional z390 variations.
 A complete log of all error messages can be found in (the full log)[z390/#full_log.txt].
 Detailed documentation can be found in (zCobol compiler status by program)[z390/_status.md]
@@ -194,7 +194,7 @@ The zCobol compiler still has a lot of limitations resulting in a large number o
 The z390 subdirectory holds source versions specific to z390/zCobol. Most importantly:
 - The IC module uses nested programs which are not supported by zCobol. The programs have been stored as separate source files.
 - The copy members used in the SM module have an extension of .CPY, but zCobol requires .CPZ instead. Required copy members are stored as .CPZ files.
-- The RUNNIST.BAT script will compile the entire NIST suite and create #full_log.txt
+- The RUNNIST.BAT or runnnist.sh script will compile the entire NIST suite and create #full_log.txt
 - The #full_log.txt is intended to be used to monitor effects of code changes in z390/zCobol.
   Each code change to zCobol should lead to reduction of error messages in this file.
   No new additions should be allowed to appear.
