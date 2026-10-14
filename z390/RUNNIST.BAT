@@ -846,9 +846,12 @@ set myRC=%ERRORLEVEL%
 if %myRC% GTR %NIST_RC% set NIST_RC=%myRC%
 rem -- bump applicable result counter
 if /I %4. EQU NOCOUNT. goto :sub_cobol_end
-if %myRC% == 0 (set /A testgood = %testgood% + 1 && goto :sub_cobol_end)
-if %myRC% == 4 (set /A testwarn = %testwarn% + 1 && goto :sub_cobol_end)
-if %myRC% == 8 (set /A testerr  = %testerr%  + 1 && goto :sub_cobol_end)
+if %myRC% == 0 set /A testgood = %testgood% + 1
+if %myRC% == 0 goto :sub_cobol_end
+if %myRC% == 4 set /A testwarn = %testwarn% + 1
+if %myRC% == 4 goto :sub_cobol_end
+if %myRC% == 8 set /A testerr  = %testerr%  + 1
+if %myRC% == 8 goto :sub_cobol_end
 set /A testfail = %testfail% + 1
 goto :sub_cobol_end
 :sub_nocbl
